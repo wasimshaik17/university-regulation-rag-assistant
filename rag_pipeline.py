@@ -18,7 +18,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
 
-def create_vector_store(data_path: str = "data") -> Optional[object]:
+def create_vector_store(data_path: "str" = "data") -> Optional[object]:
     """Create a FAISS vectorstore from all PDFs in data_path using
     local HuggingFace embeddings (no API key required for this part)."""
 
